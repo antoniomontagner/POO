@@ -1,0 +1,17 @@
+val=int(input("preco produto: "))
+print("""forma de pagamento 
+	[1]A vista
+	[2]1x cartao
+	[3]2x cartao
+	[4]ex cartao""")
+pagamento=int(input("digite:"))
+if pagamento==1:
+	print("o valor a vista é: {} reais".format(val*0.90))
+elif pagamento==2:
+	print("o valor em 1x no cartao é: {} reais".format(0.95*val))
+elif pagamento==3:
+	print("o valor em 2x no cartao é: {} reais".format(val))
+
+else:
+	print("o valor em 3x no cartao é de : {} reais".format(1.2*val))
+	
